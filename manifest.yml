@@ -1,10 +1,10 @@
 ---
 applications:
-- name: concourse-maven-cf-simple
+- name: concourse-maven-sample
   memory: 512M
   timeout: 180
   instances: 1
-  host: concourse-maven-cf-simple
+  host: concourse-maven-sample
   path: target/concourse-maven-cf-simple-0.0.1-SNAPSHOT.jar
   env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom

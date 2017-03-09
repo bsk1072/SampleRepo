@@ -3,7 +3,8 @@
 set -e -x
 
 pushd source-code
-  ./mvnw clean package
+  ./mvnw clean install
 popd
 
 cp source-code/target/concourse-maven-cf-simple-0.0.1-SNAPSHOT.jar  build-output/.
+cp source-code/target/concourse-maven-cf-simple-0.0.1-SNAPSHOT.jar  target/.
